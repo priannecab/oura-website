@@ -1,4 +1,4 @@
-/* This file is just for our homepage. We keep the design here. */
+* This file is just for our homepage. We keep the design here. */
 
 @font-face {
   font-family: "Outfit";
@@ -258,4 +258,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-
 @media (min-width: 768px) {
   .about-section { align-items: start; }
   .about-image { align-self: start; margin-top: 4px; }
+}
+
+@media (min-width: 768px) {
+  .site-nav .home-links {
+    gap: 1.5rem;
+  }
+
+  .site-nav .nav-icons a {
+    padding: 0;
+  }
 }
