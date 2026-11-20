@@ -1,0 +1,261 @@
+/* This file is just for our homepage. We keep the design here. */
+
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/Outfit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("fonts/Quicksand-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* These are our main colors and fonts. */
+:root {
+  --green: #104911;
+  --cream: #EEEBD3;
+  --gold: #FFC529;
+  --text: #12130F;
+  --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: "Quicksand", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* this give the whole page its cream background and main font. */
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--text);
+  background: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* This is the green menu bar at the top. */
+.site-nav {
+  background: var(--green);
+}
+
+.site-nav .drawer {
+  background-color: var(--green);
+}
+
+.site-nav .nav-link {
+  font-family: var(--font-body);
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  color: var(--gold) !important;
+  font-weight: 600;
+}
+
+.nav-icons img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.nav-icons a:hover img {
+  opacity: 0.7;
+}
+
+/* FOOTER
+   This is the small area at the bottom of the page. */
+.site-footer {
+  border-top: 1px solid rgba(16, 73, 17, 0.25);
+  font-size: 0.875rem;
+  color: var(--green);
+}
+
+.site-footer a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* HOMEPAGE STYLES
+   These rules control the homepage layout and design. */
+html { scroll-behavior: smooth; }
+.home-content { max-width: 1060px; }
+.home-content h1, .home-content h2 { font-family: var(--font-heading); color: var(--green); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+/* Keep the links centered like the mockup. */
+.site-nav .container { display: flex; align-items: center; justify-content: space-between; }
+.home-menu { display: flex; align-items: center; flex: 1; }
+.home-links { display: flex; flex-direction: row; gap: 18px; margin: auto; }
+.home-links .nav-link { color: white; }
+.home-links .nav-link.active { color: var(--gold) !important; }
+.nav-icons a { padding: 6px; }
+.navbar-toggler { display: none; }
+
+/* HERO SECTION
+   This is the large rounded box with the OURA nameand tagline. */
+.hero {
+  margin: 28px auto 22px;
+  padding: 27px 20px 30px;
+  max-width: 900px;
+  border: 1.5px solid var(--green);
+  border-radius: 16px;
+  background: linear-gradient(#fff, #f2f0d6);
+  box-shadow: 0 3px 3px #0003;
+}
+.hero h1 { font-size: 40px; font-weight: 700; margin: 0; }
+.hero-line { width: 145px; border-bottom: 1px solid #aaa; margin: 3px auto 13px; }
+.hero-tagline { font-family: var(--font-heading); font-size: 25px; line-height: 1.15; font-weight: 600; color: var(--green); margin-bottom: 8px; }
+.hero-description { font-family: var(--font-body); font-weight: 400; color: var(--green); margin-bottom: 17px; }
+.hero-button { font-family: var(--font-body); font-weight: 500; background: var(--green); color: white; border-radius: 30px; padding: 6px 16px; font-size: 14px; }
+.hero-button:hover { background: #0b350c; color: var(--gold); }
+
+/* FEATURED PRODUCTS
+   The shirt in the middle is bigger than the other two. it acts as a carosuel */
+.collection { max-width: 900px; margin: auto; scroll-margin-top: 15px; }
+.section-label { margin: 0; color: var(--green); }
+.collection h2 { font-size: 29px; font-weight: 700; margin: 0 0 15px; }
+.product-carousel { display: flex; align-items: center; gap: 10px; }
+.product-grid { flex: 1; display: grid; grid-template-columns: 1fr 1.32fr 1fr; gap: 28px; align-items: center; }
+.product-item { text-align: center; min-width: 0; }
+.product-image-box {
+  display: flex; align-items: center; justify-content: center;
+  height: 170px; padding: 10px; border: 1px solid var(--green);
+  border-radius: 27px; background: white; overflow: hidden;
+}
+.product-image-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.product-item.featured .product-image-box {
+  height: 235px; background: linear-gradient(#fff, #f2f0d6);
+  box-shadow: 0 3px 3px #0003;
+}
+.product-name { display: block; margin-top: 8px; color: var(--green); font-size: 13px; text-decoration: none; }
+.product-name:hover, .product-name:focus-visible { text-decoration: underline; }
+.product-item.featured .product-name { font-family: var(--font-heading); font-weight: 700; font-size: 18px; text-decoration: underline; }
+.product-price { margin: 0; color: var(--green); font-size: 13px; }
+.carousel-arrow { background: transparent; border: 0; color: var(--text); font-size: 30px; min-width: 35px; min-height: 44px; }
+.carousel-arrow:hover { color: var(--green); }
+
+/* ABOUT US
+   On a computer, the text is on the left and the logo is on the right. */
+.about-section {
+  max-width: 900px;
+  margin: 22px auto 30px;
+  padding: 28px 15px 0;
+  border-top: 1px solid #92a28b;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+.about-text { min-width: 0; }
+.about-section h2 { font-size: 29px; font-weight: 700; margin: 0 0 10px; }
+.about-section p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--green);
+  margin: 0 0 16px 18px;
+}
+.about-image {
+  width: 100%;
+  max-width: 280px;
+  height: 195px;
+  justify-self: end;
+  background: var(--green);
+  border-radius: 14px;
+  box-shadow: 0 3px 3px #0003;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-logo {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+/* Keep the font sizes and the images consistent with the wireframe. */
+.home-links .nav-link { font-family: var(--font-body); font-weight: 500; font-size: 18px; }
+.section-label { font-size: 14px; }
+.hero-description { font-size: 14px; }
+.product-image-box img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.product-item.featured .product-name { font-weight: 600; }
+
+/* SMALL SCREENS
+   These changes help the website fit on phones. */
+@media (max-width: 767px) {
+  .navbar-toggler { display: block; margin-left: auto; }
+  .home-menu { display: none; flex-basis: 100%; flex-direction: column; align-items: flex-start; padding: 12px 0; }
+  .home-menu.open { display: flex; }
+  .site-nav .container { flex-wrap: wrap; }
+  .home-links { flex-direction: column; margin: 0; gap: 0; }
+  .nav-icons { margin-top: 8px; }
+  .hero { padding: 25px 14px; }
+  .product-grid { gap: 8px; }
+  .product-image-box { height: 115px; border-radius: 16px; padding: 5px; }
+  .product-item.featured .product-image-box { height: 160px; }
+  .product-name { font-size: 11px; overflow-wrap: anywhere; }
+  .product-item.featured .product-name { font-size: 13px; }
+  .carousel-arrow { min-width: 22px; font-size: 25px; }
+  .about-section { grid-template-columns: 1fr; gap: 12px; }
+  .about-image { justify-self: center; }
+  .about-section p { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Set the font style for homepage headings and text. */
+.home-content h1, .home-content h2 { font-family: var(--font-heading); font-weight: 700; }
+.home-content p, .home-content a { font-family: var(--font-body); }
+.hero-tagline { font-family: var(--font-heading) !important; font-weight: 600; }
+.product-item.featured .product-name { font-family: var(--font-heading); }
+
+/* Set the font style for the homepage menu. */
+.site-nav .home-links .nav-link {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+.site-nav .home-links .nav-link.active,
+.site-nav .home-links .nav-link:hover {
+  font-weight: 600;
+  color: var(--gold) !important;
+}
+/* Keep the logo beside the text, aligned at the top of About Us. */
+@media (min-width: 768px) {
+  .about-section { align-items: start; }
+  .about-image { align-self: start; margin-top: 4px; }
+}
