@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Support | OURA</title>
+
+  <!-- bootstrap and custom styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- top navbar -->
+  <header>
+    <nav class="navbar md:navbar-expand site-nav" data-bs-theme="dark">
+      <div class="container">
+        <!-- brand logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/oura-logo.png" alt="OURA logo" height="36">
+        </a>
+
+        <!-- mobile menu button -->
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarDrawer" aria-controls="navbarDrawer"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <!-- slide-out mobile drawer / desktop links -->
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+          <div class="drawer-header">
+            <div class="drawer-title" id="navbarDrawerLabel">Menu</div>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body align-items-center w-100">
+            <ul class="navbar-nav mx-auto md:gap-4">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="solo-product-pages.html">Shop</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+            </ul>
+            <!-- right side icons -->
+            <div class="nav-icons d-flex gap-3">
+              <a href="solo-product-pages.html"><img src="images/icon-search.png" alt="Search the shop"></a>
+              <a href="solo-product-pages.html"><img src="images/icon-basket.png" alt="View cart"></a>
+              <a href="contact.html"><img src="images/icon-person.png" alt="Account and contact"></a>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- page title -->
+    <div class="page-head text-center mx-auto mb-5" style="max-width: 540px;">
+      <h1 class="mb-3">Contact Support</h1>
+      <p>Any questions? We would be happy to help!</p>
+    </div>
+  
+    <!-- support options grid -->
+    <div class="row row-cols-1 md:row-cols-2 g-4 mx-auto mb-5" style="max-width: 820px;">
+
+      <!-- faq card -->
+      <div class="col">
+        <div class="contact-card">
+          <img src="images/fax-circle.png" alt="" class="icon">
+          <span class="card-title">FAQS</span>
+          <p>Got inquiries? Check what others have been asking!</p>
+        </div>
+      </div>
+
+      <!-- support modal trigger card -->
+      <div class="col">
+        <div class="contact-card" role="button" data-bs-target="#supportModal">
+          <img src="images/support-circle.png" alt="" class="icon">
+          <span class="card-title">Contact Support</span>
+          <p>Chat with a member of our Sales Team.</p>
+        </div>
+      </div>
+
+      <!-- shipment tracking card -->
+      <div class="col">
+        <div class="contact-card">
+          <img src="images/truck-circle.png" alt="" class="icon">
+          <span class="card-title">Track Your Shipment</span>
+          <p>Get real-time updates on your orders in one simple step.</p>
+        </div>
+      </div>
+
+      <!-- socials card -->
+      <div class="col">
+        <div class="contact-card">
+          <img src="images/ig-circle.png" alt="" class="icon">
+          <span class="card-title">Socials</span>
+          <p>Follow our social media accounts to get the latest updates!</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer py-3">
+    <div class="container d-flex flex-wrap gap-2">
+      <span>OURA &copy; 2026</span>
+      <span aria-hidden="true">&middot;</span>
+      <a href="privacy.html" class="text-decoration-none">Privacy</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="privacy.html" class="text-decoration-none">Terms</a>
+    </div>
+  </footer>
+
+  <!-- popup modal for sending an email -->
+  <div id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content custom-modal p-4">
+        <div class="modal-header border-0 pb-2 d-flex justify-content-between align-items-center">
+          <h5 class="modal-title fw-bold m-0" id="supportModalLabel">Contact Support</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- email form -->
+        <form id="supportEmailForm">
+          <div class="modal-body py-2">
+            <p class="text-muted small mb-3">
+              Fill out the details below to compose an email to <strong>hello@examplewebsite142.com</strong> in your default mail app.
+            </p>
+            <div class="mb-3">
+              <label for="senderName" class="form-label fw-semibold">Your Name</label>
+              <input type="text" class="form-control" id="senderName" placeholder="Calvin Valerio" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailSubject" class="form-label fw-semibold">Subject</label>
+              <input type="text" class="form-control" id="emailSubject" value="Customer Support Inquiry" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailMessage" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" id="emailMessage" rows="4" placeholder="Hello OURA Support Team, I need help with..." required></textarea>
+            </div>
+          </div>
+          <!-- form buttons -->
+          <div class="modal-footer border-0 pt-2 d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-oura rounded-pill px-4">Open in Email App</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
