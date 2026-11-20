@@ -1,0 +1,161 @@
+/* Fonts */
+@font-face {
+  font-family: "Outfit";
+  src: url("../font/outfit-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../font/outfit-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../font/quicksand-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../font/quicksand-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+:root {
+  --green: #104911;
+  --cream: #EEEBD3;
+  --gold: #FFC529;
+  --text: #12130F;
+  --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: "Quicksand", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Base Layout */
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--text);
+  background: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar */
+.site-nav {
+  background: var(--green);
+}
+
+.site-nav .drawer {
+  background-color: var(--green);
+}
+
+.site-nav .nav-link {
+  font-family: var(--font-body);
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  color: var(--gold) !important;
+  font-weight: 600;
+}
+
+.nav-icons img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.nav-icons a:hover img {
+  opacity: 0.7;
+}
+
+/* Page Heading */
+.page-head {
+  padding-top: 1.5rem;    /* Extra space between navbar and "Privacy & Terms" */
+  padding-bottom: 1.5rem; /* Extra space between subtitle and the cards */
+}
+
+.page-head h1 {
+  font-family: var(--font-heading);
+  color: var(--green);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  margin-bottom: 1rem;
+}
+
+.page-head p {
+  color: var(--text); /* Darker text color matching the mockup subtitle */
+  max-width: 34rem;
+  margin-inline: auto;
+  line-height: 1.5;
+}
+
+/* Policy Cards */
+.policy-card {
+  position: relative;
+  height: 100%;
+  border: 1.5px solid var(--green);
+  border-radius: 16px;
+  padding: 1.75rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f0d6 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.policy-card img.icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.policy-card .card-title {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--green);
+  margin-bottom: 0.35rem;
+}
+
+.policy-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(16, 73, 17, 0.25);
+  font-size: 0.875rem;
+  color: var(--green);
+}
+
+.site-footer a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
