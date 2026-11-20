@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
   font-family: "Outfit";
-  src: url("../font/outfit-regular.ttf") format("truetype");
+  src: url("../font/Outfit-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Outfit";
-  src: url("../font/outfit-medium.ttf") format("truetype");
+  src: url("../font/Outfit-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: "Quicksand";
-  src: url("../font/quicksand-bold.ttf") format("truetype");
+  src: url("../font/Quicksand-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
