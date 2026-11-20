@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OURA Oversized Tee</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/solo-product-pages-styles.css" />
+</head>
+<body>
+
+  <header>
+    <header>
+    <nav class="navbar md:navbar-expand site-nav" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/oura-logo.png" alt="OURA logo" height="36">
+        </a>
+
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarDrawer" aria-controls="navbarDrawer"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+          <div class="drawer-header">
+            <div class="drawer-title" id="navbarDrawerLabel">Menu</div>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body align-items-center w-100">
+            <ul class="navbar-nav mx-auto md:gap-4">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-icons d-flex gap-3">
+              <a href="shop.html"><img src="images/icon-search.png" alt="Search the shop"></a>
+              <a href="shop.html"><img src="images/icon-basket.png" alt="View cart"></a>
+              <a href="contact.html"><img src="images/icon-person.png" alt="Account and contact"></a>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="product-wrapper d-flex align-items-center">
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center g-5">
+
+        <div class="col-12 col-md-6 col-lg-5 d-flex flex-column align-items-center">
+          
+          <div id="productCarousel" class="carousel slide main-carousel-card" data-bs-ride="false">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <div class="carousel-img-container">
+                  <img src="images/oversized-tee-front.png" class="d-block img-fluid" alt="OURA Oversized Tee Front View" />
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="carousel-img-container">
+                  <img src="images/oversized-tee-back.png" class="d-block img-fluid" alt="OURA Oversized Tee Back View" />
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="carousel-img-container">
+                  <img src="images/oversized-tee-details.png" class="d-block img-fluid" alt="OURA Oversized Tee Collar & Print Detail" />
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="carousel-img-container">
+                  <img src="images/oversized-size-chart.png" class="d-block img-fluid" alt="OURA Oversized Tee Size Chart" />
+                </div>
+              </div>
+            </div>
+
+            <button id="prevSlideBtn" class="carousel-control-prev custom-carousel-arrow" type="button" data-bs-target="#productCarousel" data-bs-slide="prev" aria-label="Previous image">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button id="nextSlideBtn" class="carousel-control-next custom-carousel-arrow" type="button" data-bs-target="#productCarousel" data-bs-slide="next" aria-label="Next image">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="thumbnail-row d-flex justify-content-between mt-4">
+            <button type="button" class="thumb-card active" data-slide-index="1" aria-label="View Back Image">
+              <img src="images/oversized-tee-back.png" alt="Back Thumbnail" />
+            </button>
+            <button type="button" class="thumb-card" data-slide-index="2" aria-label="View Detail Image">
+              <img src="images/oversized-tee-details.png" alt="Detail Thumbnail" class="thumb-cover" />
+            </button>
+            <button type="button" class="thumb-card" data-slide-index="3" aria-label="View Size Chart">
+              <img src="images/oversized-size-chart.png" alt="Size Chart Thumbnail" />
+            </button>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-5 product-info-col">
+          <h1 class="product-title mb-2" id="productName" data-price="499">OURA Oversized Tee</h1>
+          <p class="product-price mb-3">₱499</p>
+
+          <p class="product-description mb-4">
+            100% ethically sourced cotton | natural dye &nbsp;|&nbsp;<br />
+            loose fit &nbsp;|&nbsp; sweat-absorbent
+          </p>
+
+          <div class="mb-3">
+            <button type="button" id="sizeChartBtn" class="btn-oura-pill">size chart</button>
+          </div>
+
+          <div class="size-selector d-flex flex-wrap gap-2 mb-4" role="group" aria-label="Select T-shirt size">
+            <button type="button" class="size-btn" data-size="XS">xs</button>
+            <button type="button" class="size-btn" data-size="S">s</button>
+            <button type="button" class="size-btn active" data-size="M">m</button>
+            <button type="button" class="size-btn" data-size="L">l</button>
+            <button type="button" class="size-btn" data-size="XL">xl</button>
+            <button type="button" class="size-btn" data-size="XXL">xxl</button>
+            <button type="button" class="size-btn" data-size="XXXL">xxxl</button>
+          </div>
+
+          <div class="mb-4">
+            <div class="qty-wrapper qty-pill d-inline-flex align-items-center justify-content-between">
+              <button type="button" id="qtyDecrease" class="qty-btn" aria-label="Decrease quantity">-</button>
+              <span id="qtyValue" class="qty-display">1</span>
+              <button type="button" id="qtyIncrease" class="qty-btn" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+
+          <div class="action-buttons d-flex flex-wrap gap-3 mt-2">
+            <button type="button" id="putInBasketBtn" class="btn-basket">Put in Basket</button>
+            <a id="getNowBtn" href="mailto:orders@examplewebsite142.com" class="btn-get-now text-decoration-none d-inline-flex align-items-center justify-content-center">Get Now</a>
+          </div>
+
+          <div id="basketFeedback" class="basket-feedback mt-3" role="status" aria-live="polite"></div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer py-3">
+    <div class="container d-flex flex-wrap gap-2">
+      <span>OURA &copy; 2026</span>
+      <span aria-hidden="true">&middot;</span>
+      <a href="privacy.html#privacy-policy">Privacy</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="privacy.html#terms-of-service">Terms</a>
+    </div>
+  </footer>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+
+<script src="solo-product-pages-script.js"></script>
+</body>
+</html>
