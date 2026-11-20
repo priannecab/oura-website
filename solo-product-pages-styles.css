@@ -1,21 +1,21 @@
 @font-face {
   font-family: "QuicksandBold";
-  src: url('fonts/Quicksand-Bold.ttf') format('truetype');
+  src: url("fonts/Quicksand-Bold.ttf") format('truetype');
   font-display: swap;
 }
 @font-face {
   font-family: "OutfitRegular";
-  src: url('fonts/Outfit-Regular.ttf') format('truetype');
+  src: url("fonts/Outfit-Regular.ttf") format('truetype');
   font-display: swap;
 }
 @font-face {
   font-family: "OutfitMedium";
-  src: url('fonts/Outfit-Medium.ttf') format('truetype');
+  src: url("fonts/Outfit-Medium.ttf") format('truetype');
   font-display: swap;
 }
 @font-face {
   font-family: "QuicksandSemiBold";
-  src: url('fonts/Quicksand-SemiBold.ttf') format('truetype');
+  src: url("fonts/Quicksand-SemiBold.ttf") format('truetype');
   font-display: swap;
 }
 :root {
