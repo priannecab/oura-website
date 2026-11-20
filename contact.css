@@ -31,7 +31,6 @@
   font-display: swap;
 }
 
-/* Variables */
 :root {
   --green: #104911;
   --cream: #EEEBD3;
@@ -39,6 +38,7 @@
   --text: #12130F;
   --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-heading: "Quicksand", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bs-body-font-family: var(--font-body); /* Overrides Bootstrap's default font */
 }
 
 /* Base Layout */
