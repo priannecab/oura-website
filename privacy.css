@@ -31,6 +31,7 @@
   font-display: swap;
 }
 
+/* Main colors and fonts */
 :root {
   --green: #104911;
   --cream: #EEEBD3;
@@ -38,7 +39,7 @@
   --text: #12130F;
   --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-heading: "Quicksand", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --bs-body-font-family: var(--font-body); /* Overrides Bootstrap's default font */
+  --bs-body-font-family: var(--font-body);
 }
 
 /* Base Layout */
@@ -50,6 +51,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* Force custom fonts over Bootstrap defaults */
+body, p, a, span, li, button {
+  font-family: var(--font-body) !important;
+}
+
+h1, h2, h3, h4, h5, .page-head h1, .policy-card .card-title {
+  font-family: var(--font-heading) !important;
 }
 
 main {
@@ -66,7 +76,6 @@ main {
 }
 
 .site-nav .nav-link {
-  font-family: var(--font-body);
   color: #fff;
   font-weight: 500;
   padding: 0.5rem 1rem;
@@ -90,12 +99,11 @@ main {
 
 /* Page Heading */
 .page-head {
-  padding-top: 1.5rem;    /* Extra space between navbar and "Privacy & Terms" */
-  padding-bottom: 1.5rem; /* Extra space between subtitle and the cards */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .page-head h1 {
-  font-family: var(--font-heading);
   color: var(--green);
   font-weight: 700;
   font-size: clamp(1.75rem, 4vw, 2.25rem);
@@ -103,7 +111,7 @@ main {
 }
 
 .page-head p {
-  color: var(--text); /* Darker text color matching the mockup subtitle */
+  color: var(--text);
   max-width: 34rem;
   margin-inline: auto;
   line-height: 1.5;
@@ -130,9 +138,8 @@ main {
 
 .policy-card .card-title {
   display: block;
-  font-family: var(--font-body);
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--green);
   margin-bottom: 0.35rem;
 }
