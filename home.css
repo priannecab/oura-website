@@ -1,4 +1,4 @@
-* This file is just for our homepage. We keep the design here. */
+/* This file is just for our homepage. We keep the design here. */
 
 @font-face {
   font-family: "Outfit";
@@ -156,7 +156,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-
 }
 .product-image-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .product-item.featured .product-image-box {
-  height: 235px; background: linear-gradient(#fff, #f2f0d6);
+  height: 235px; background: #fff;
   box-shadow: 0 3px 3px #0003;
 }
 .product-name { display: block; margin-top: 8px; color: var(--green); font-size: 13px; text-decoration: none; }
@@ -262,10 +262,24 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-
 
 @media (min-width: 768px) {
   .site-nav .home-links {
-    gap: 1.5rem;
+    gap: 12px;
+  }
+
+  .site-nav .nav-icons {
+    gap: 8px !important;
+  }
+
+  .site-nav .navbar-brand {
+    padding-block: 6px;
   }
 
   .site-nav .nav-icons a {
     padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-nav > .container {
+    max-width: 1200px;
   }
 }
